@@ -1,0 +1,11 @@
+@import './variaveis';
+
+html, body {
+    font-family: $fonte-principal;
+}
+
+@media screen and (min-width:1024px) {
+    .sobre, .gallery-desktop, .orcamento {
+        padding: 0 6rem;
+    }
+}

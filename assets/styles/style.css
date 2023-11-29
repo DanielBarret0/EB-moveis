@@ -1,0 +1,353 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+html, body {
+  font-family: "Instrument Sans", sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  .sobre, .gallery-desktop, .orcamento {
+    padding: 0 6rem;
+  }
+}
+.nav-mobile .btn {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500;
+  background-color: #2B2A4C;
+  color: #EEE2DE;
+  border: none;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-mobile {
+    display: none;
+  }
+  .nav-desktop {
+    display: flex;
+  }
+}
+.carousel {
+  height: 100%;
+}
+.carousel .carousel-item .carousel-item {
+  text-align: center;
+}
+.carousel .carousel-item .img {
+  height: 400px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel {
+    height: 100%;
+  }
+  .carousel .carousel-item .carousel-item {
+    text-align: center;
+  }
+  .carousel .carousel-item .img {
+    height: 500px;
+    width: 100%;
+  }
+}
+.sobre {
+  margin-top: 2rem;
+}
+.sobre .sobre__imagem {
+  display: none;
+}
+.sobre .textos {
+  font-family: "Oswald", sans-serif;
+  border-left: 4px solid #B31312;
+  padding-left: 8px;
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+.sobre .textos h2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #2B2A4C;
+}
+.sobre .textos p {
+  text-align: left;
+  font-weight: 300;
+  color: gray;
+}
+.sobre .textos .sobre__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #2B2A4C;
+  color: #2B2A4C;
+}
+
+@media screen and (min-width: 768px) {
+  .sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobre .sobre__imagem {
+    display: block;
+    width: 400px;
+    height: 400px;
+  }
+  .sobre .textos {
+    font-family: "Oswald", sans-serif;
+    border-left: 4px solid #B31312;
+    padding-left: 12px;
+  }
+}
+.gallery-desktop {
+  display: none;
+}
+
+.gallery-mobile .textos {
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  border-left: 4px solid #B31312;
+  padding-left: 8px;
+  margin: 1rem;
+  padding: 0 2rem;
+}
+.gallery-mobile .textos h2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #2B2A4C;
+}
+.gallery-mobile .textos p {
+  text-align: left;
+  font-weight: 300;
+  color: gray;
+}
+.gallery-mobile .container__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+}
+.gallery-mobile .container__grid .categoria p {
+  position: absolute;
+  color: red;
+  text-align: center;
+  left: -500%;
+}
+.gallery-mobile .container__grid .categoria img {
+  width: 250px;
+  height: 120px;
+  border-radius: 10px;
+}
+.gallery-mobile .container__grid .ver-mais {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.gallery-mobile .container__grid .ver-mais a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.4rem;
+  border: 2px solid #2B2A4C;
+  border-radius: 5px;
+  color: #2B2A4C;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-mobile {
+    display: none;
+  }
+  .gallery-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .gallery-desktop .textos {
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    border-left: 4px solid #B31312;
+    padding-left: 8px;
+    margin: 1rem;
+  }
+  .gallery-desktop .textos h2 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #2B2A4C;
+  }
+  .gallery-desktop .textos p {
+    text-align: left;
+    font-weight: 300;
+    color: gray;
+  }
+  .gallery-desktop .container__flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .gallery-desktop .container__flex .categoria p {
+    position: absolute;
+    color: red;
+    text-align: center;
+    left: -500%;
+  }
+  .gallery-desktop .container__flex .categoria img {
+    width: 150px;
+    height: 90px;
+    border-radius: 10px;
+  }
+  .gallery-desktop .ver-mais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+  }
+  .gallery-desktop .ver-mais a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    border: 2px solid #2B2A4C;
+    border-radius: 5px;
+    color: #2B2A4C;
+  }
+}
+.orcamento .orcamento-imagem {
+  display: none;
+}
+.orcamento .textos {
+  font-family: "Oswald", sans-serif;
+  border-left: 4px solid #B31312;
+  padding-left: 8px;
+  margin: 1rem;
+}
+.orcamento .textos h2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #2B2A4C;
+}
+.orcamento .textos p {
+  text-align: left;
+  font-weight: 300;
+  color: gray;
+}
+.orcamento .textos .orcamento-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #2B2A4C;
+  color: #2B2A4C;
+}
+
+@media screen and (min-width: 768px) {
+  .orcamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .orcamento .orcamento-imagem {
+    display: block;
+    width: 400px;
+    height: 400px;
+  }
+}
+.rodape {
+  background-color: rgba(125, 124, 124, 0.097);
+  border-radius: 50% 50% 0 0/10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.rodape .redes i {
+  color: #2B2A4C;
+  font-size: 1.5rem;
+}
+.rodape .conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.rodape .conteudo a {
+  text-decoration: none;
+  color: #2B2A4C;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.rodape .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.rodape .logo .logo-desktop {
+  display: none;
+}
+.rodape .logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.dev {
+  background-color: black;
+  padding: 0.8rem;
+}
+.dev p {
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+  }
+  .rodape .conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-top: 1rem;
+  }
+  .rodape .conteudo a {
+    text-decoration: none;
+    color: #2B2A4C;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .rodape .logo .logo-mobile {
+    display: none;
+  }
+  .rodape .logo .logo-desktop {
+    display: block;
+    width: 350px;
+  }
+  .rodape .logo .redes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .rodape .logo .redes i {
+    color: #2B2A4C;
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

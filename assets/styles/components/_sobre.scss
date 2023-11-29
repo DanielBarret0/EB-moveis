@@ -1,0 +1,60 @@
+@import '../abstract/variaveis';
+
+.sobre {
+    margin-top: 2rem;
+    .sobre__imagem {
+        display: none;
+    }
+
+    .textos {
+        font-family: $fonte-terciaria;
+        border-left: 4px solid $vermelho; 
+        padding-left: 8px;
+        margin: 1rem;
+        margin-bottom: 3rem;
+    
+        h2 {
+            text-align: left;
+            font-size: 2rem;
+            font-weight: 400;
+            color: $madeira;
+        }
+    
+        p {
+            text-align: left;
+            font-weight: 300;
+            color: gray;
+        }
+
+        .sobre__link {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 0.8rem;
+                border-bottom: 1px solid $madeira;
+                color: $madeira;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .sobre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        .sobre__imagem {
+            display: block;
+            width: 400px;
+            height: 400px;
+        }
+
+        .textos {
+            font-family: $fonte-terciaria;
+            border-left: 4px solid $vermelho; 
+            padding-left: 12px;
+        }
+
+    }
+}
+

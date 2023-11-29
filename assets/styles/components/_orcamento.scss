@@ -1,0 +1,52 @@
+@import '../abstract/variaveis';
+
+.orcamento {
+    .orcamento-imagem {
+        display: none;
+    }
+
+    .textos {
+        font-family: $fonte-terciaria;
+        border-left: 4px solid $vermelho;
+        padding-left: 8px;
+        margin: 1rem;
+
+        h2 {
+            text-align: left;
+            font-size: 2rem;
+            font-weight: 400;
+            color: $madeira;
+        }
+
+        p {
+            text-align: left;
+            font-weight: 300;
+            color: gray;
+        }
+
+        .orcamento-link {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.8rem;
+            border-bottom: 1px solid $madeira;
+            color: $madeira;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .orcamento {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        .orcamento-imagem {
+            display: block;
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
