@@ -8,21 +8,38 @@
     justify-content: space-between;
     padding: 1rem;
     .redes {
-        i {
-            color: $madeira;
-            font-size: 1.5rem;
+        display: flex;
+        gap: 0.6rem;
+        a {
+            transition: 500ms all;
+            i {
+                color: $madeira;
+                font-size: 1.6rem;
+                transition: 500ms all;
+                &:hover {
+                    color: $vermelho;
+                    margin-bottom: 15px;
+                }
+            }
         }
+        
+
     }
     .conteudo  {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        justify-content: center;
+        gap: 0.2rem;
         margin-top: 1rem;
         a {
             text-decoration: none;
             color: $madeira;
             font-size: 1.2rem;
             font-weight: 400;
+            &:hover {
+                color: $vermelho;
+                border-bottom: 2px solid $vermelho;
+            }
         }
     }
     .logo {
@@ -97,5 +114,17 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .rodape {
+        padding: 4rem 15rem;
+    }
+}
+
+@media screen and (min-width:2260px) {
+    .rodape {
+        padding: 4rem 45rem;
     }
 }

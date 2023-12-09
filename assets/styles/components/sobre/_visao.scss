@@ -1,0 +1,98 @@
+@import '../../abstract/variaveis';
+
+.visao {
+    padding: 0 2rem;
+    .textos {
+        margin: 1rem;
+        h2 {
+            text-align: left;
+            font-size: 2rem;
+            font-weight: 700;
+            color: $madeira;
+            border-left: 4px solid $vermelho;
+            padding-left: 8px;
+        }
+    }
+}
+
+.conteudo {
+    padding: 0 1rem;
+    .conteudo-item {
+        margin-bottom: 2rem;
+        h3 {
+            text-align: left;
+            font-size: 2rem;
+            font-weight: 700;
+            color: $madeira;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            text-align: left;
+            font-weight: 500;
+            font-size: 1.2rem;
+            word-spacing: 8%;
+            color: $fonte;
+            font-family: $fonte-secundaria;
+        }
+    }
+}
+
+.accordion {
+    font-family: $fonte-principal;
+    .accordion-button {
+        padding: 0.5rem;
+        font-weight: 500;
+    }
+    .accordion-body {
+        li {
+            margin-bottom: 0.5rem;
+            line-height: normal;
+            font-weight: 500;
+            color: $fonte;
+            font-family: $fonte-secundaria;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .visao {
+        margin-bottom: 3rem;
+    }
+    .conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: flex-start;
+        justify-content: center;
+
+        .conteudo-item {
+            margin-bottom: 0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+            height: 100%;
+            padding: 1rem;
+            h3 {
+                margin-bottom: 0;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .visao {
+        padding: 0 15rem;
+        
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .visao {
+        padding: 0 35rem;
+    }
+}

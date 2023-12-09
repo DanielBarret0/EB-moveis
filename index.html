@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Limelight&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet">
 
 
@@ -29,48 +29,33 @@
 
 <body>
 
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex justify-content-center align-items-center column-gap-2" href="#">
-                <img src="assets/img/logo-EB.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
-                EB Moveis Planejados
-            </a>
-
-            <div class="nav-mobile">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Home
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-                        <li><a class="dropdown-item" href="#sobre">Quem Somos</a></li>
-                        <li><a class="dropdown-item" href="#projetos">Projetos</a></li>
-                        <li><a class="dropdown-item" href="#orcamentos">Orçamentos</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="nav-desktop">
-                <ul class="navbar-nav d-flex flex-row column-gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Quem somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projeto">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#orcamentos">Orçamentos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav class="top-nav">
+        <a class="container__logo" href="index.html">
+            <img src="assets/img/logo-EB.png" alt="logotipo EB moveis">
+            <p class="texto-desktop">EB Moveis Planejados</p>
+        </a>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li class="texto-hover">
+                <a href="#sobre">Quem Somos</a>
+                <div class="linha-hover"></div>
+            </li>
+            <li class="texto-hover">
+                <a href="#projetos">Projetos</a>
+                <div class="linha-hover"></div>
+            </li>
+            <li class="texto-hover">
+                <a href="#orcamentos">Orçamentos</a>
+                <div class="linha-hover"></div>
+            </li>
+        </ul>
     </nav>
 
     <main>
-        <div class="carousel">
+        <section class="carousel">
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -105,118 +90,123 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </div>
+        </section>
 
-        <div class="sobre" id="sobre">
-            <img class="sobre__imagem" src="assets/img/gif/about-us.gif" alt="imagem gif">
-            <div class="textos">
-                <h2>Quem somos?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eius numquam veniam perspiciatis culpa
-                    nesciunt delectus eum aut officiis! Praesentium eaque blanditiis commodi nobis ab consequatur.
-                    Consequatur molestias facere odit.</p>
+        <div class="espacamento-desktop">
+            <section class="sobre" id="sobre">
+                <img class="sobre__imagem" src="assets/img/gif/about-us.gif" alt="imagem gif">
+                <div class="textos">
+                    <h1>Quem somos?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eius numquam veniam perspiciatis
+                        culpa
+                        nesciunt delectus eum aut officiis! Praesentium eaque blanditiis commodi nobis ab consequatur.
+                        Consequatur molestias facere odit.</p>
 
-                <a class="sobre__link" href="#">Saiba mais</a>
-            </div>
-        </div>
-
-        <div class="gallery-mobile" id="projetos">
-            <div class="textos">
-                <h2>Ambientes e móveis Planejados</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere inventore</p>
-            </div>
-
-            <div class="container__grid">
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/cozinhas.png" alt="Cozinhas">
-                </a>
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/banheiros.png" alt="Banheiros">
-                </a>
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/restaurantes.png" alt="Restaurantes">
-                </a>
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/dormitorios.png" alt="Dormitórios">
-                </a>
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/lojas.png" alt="Lojas">
-                </a>
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/salas.png" alt="Salas">
-                </a>
-
-                <div class="ver-mais">
-                    <a href="#">Ver Todos</a>
+                    <a class="sobre__link" href="sobre.html">Saiba mais</a>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="gallery-desktop" id="projeto">
-            <div class="textos">
-                <h2>Ambientes e móveis Planejados</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere inventore</p>
-            </div>
-
-            <div class="container__flex">
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/cozinhas.png" alt="Cozinhas">
-                </a>
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/banheiros.png" alt="Banheiros">
-                </a>
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/restaurantes.png" alt="Restaurantes">
-                </a>
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/dormitorios.png" alt="Dormitórios">
-                </a>
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/lojas.png" alt="Lojas">
-                </a>
-                <a href="#" class="categoria">
-                    <p>Cozinhas</p>
-                    <img src="assets/img/banner dos cards/salas.png" alt="Salas">
-                </a>
-
-                <div class="ver-mais">
-                    <a href="#">Ver Todos</a>
+            <section class="gallery-mobile" id="projetos">
+                <div class="textos">
+                    <h2>Ambientes e móveis Planejados</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere inventore</p>
                 </div>
-            </div>
 
+                <div class="container__grid">
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/cozinhas.png" alt="Cozinhas">
+                    </a>
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/banheiros.png" alt="Banheiros">
+                    </a>
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/restaurantes.png" alt="Restaurantes">
+                    </a>
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/dormitorios.png" alt="Dormitórios">
+                    </a>
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/lojas.png" alt="Lojas">
+                    </a>
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/salas.png" alt="Salas">
+                    </a>
+
+                    <div class="ver-mais">
+                        <a href="#">Ver Todos</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-desktop" id="projeto">
+
+                <div class="textos">
+                    <h2>Ambientes e móveis Planejados</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere inventore</p>
+                    <a class="ver-mais" href="#">Ver Todos</a>
+                </div>
+
+                <div class="container__flex">
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/cozinhas.png" alt="Cozinhas">
+                    </a>
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/banheiros.png" alt="Banheiros">
+                    </a>
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/restaurantes.png" alt="Restaurantes">
+                    </a>
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/dormitorios.png" alt="Dormitórios">
+                    </a>
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/lojas.png" alt="Lojas">
+                    </a>
+                    <a href="#" class="categoria">
+                        <p>Cozinhas</p>
+                        <img src="assets/img/banner dos cards/salas.png" alt="Salas">
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="orcamento" id="orcamentos">
+                <img class="orcamento-imagem" src="assets/img/orcamento.svg" alt="...">
+                <div class="textos">
+                    <h2>Como fazer o orçamento</h2>
+                    <p>Entre em contato comigo atraves do meu what's app clicando Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dolor necessitatibus culpa ducimus quo earum dignissimos enim aut voluptates,
+                        quibusdam ab esse, doloribus perferendis mollitia eos blanditiis nobis explicabo pariatur ea?
+                    </p>
+
+                    <a class="orcamento-link" href="#">Faça seu orçamento</a>
+                </div>
+
+            </section>
         </div>
 
-        <div class="orcamento" id="orcamentos">
-            <img class="orcamento-imagem" src="assets/img/orcamento.svg" alt="...">
-            <div class="textos">
-                <h2>Como fazer o orçamento</h2>
-                <p>Entre em contato comigo atraves do meu what's app clicando Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor necessitatibus culpa ducimus quo earum dignissimos enim aut voluptates, quibusdam ab esse, doloribus perferendis mollitia eos blanditiis nobis explicabo pariatur ea?</p>
-
-                <a class="orcamento-link" href="#">Faça seu orçamento</a>
-            </div>
-            
-        </div>
     </main>
 
     <footer class="rodape">
         <div class="conteudo">
             <a href="#sobre">Sobre nós</a>
             <a href="#projeto">Projetos</a>
-            <a href="#orcamento">Orcamento</a>
+            <a href="#orcamento">Orçamento</a>
         </div>
         <div class="logo">
-            <img class="logo-mobile" src="assets/img/logo-EB.png"
-            alt="logo">
+            <img class="logo-mobile" src="assets/img/logo-EB.png" alt="logo">
             <img class="logo-desktop" src="assets/img/logo-longa.png" alt="logo da EB moveis">
             <div class="redes">
                 <a href="#" aria-label="Icone do instagram"><i class="bi bi-instagram"></i></a>
@@ -226,9 +216,15 @@
         </div>
     </footer>
     <div class="dev">
-        <p>© Copyright - Todos os direitos reservados - EB Moveis 2023 • Política de Privacidade • Desenvolvido por Daniel Barreto</p>
+        <p>© Copyright - Todos os direitos reservados - EB Moveis 2023 • Política de Privacidade • Desenvolvido por
+            Daniel Barreto</p>
     </div>
 
+    <button id="btnScrollToTop">
+        <p>Voltar ao topo</p>
+    </button>
+
+    <script src="assets/js/botao-topo.js"></script>
 </body>
 
 </html>

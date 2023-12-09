@@ -1,0 +1,21 @@
+#btnScrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    p {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+#btnScrollToTop:hover {
+    background-color: #0056b3;
+}

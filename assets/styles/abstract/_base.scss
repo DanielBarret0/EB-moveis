@@ -1,11 +1,32 @@
 @import './variaveis';
 
 html, body {
-    font-family: $fonte-principal;
+    h1 {
+        font-family: $fonte-principal;
+    }
+    p {
+        font-family: $fonte-secundaria;
+    }
+}
+
+@media screen and (min-width:768px) {
+    
 }
 
 @media screen and (min-width:1024px) {
-    .sobre, .gallery-desktop, .orcamento {
+    .espacamento-desktop{
         padding: 0 6rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .espacamento-desktop {
+        padding: 0 15rem; 
+    }
+}
+
+@media screen and (min-width:2000px) {
+    .espacamento-desktop {
+        padding: 0 45rem; 
     }
 }

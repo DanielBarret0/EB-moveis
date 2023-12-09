@@ -27,3 +27,34 @@
         }
     }
 }
+
+@media screen and (min-width:1440px) {
+    .carousel {
+        height: 100%;
+        .carousel-item {
+            .carousel-item {
+                text-align: center;
+            }
+            .img {
+                height: 600px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .carousel {
+        height: 100%;
+        .carousel-item {
+            .carousel-item {
+                text-align: center;
+            }
+            .img {
+                height: 700px;
+                width: 100%;
+            }
+        }
+    }
+}
+
