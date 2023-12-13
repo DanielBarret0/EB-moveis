@@ -11,7 +11,6 @@
         border-left: 4px solid $vermelho;
         padding-left: 8px;
         margin: 1rem;
-        width: 50%;
     
         h2 {
             text-align: left;
@@ -32,7 +31,7 @@
     }
     
     .historia__img {
-        width: 50%;
+        width: 350px;
     }
 }
 
@@ -53,9 +52,11 @@
     }
 }
 
-@media screen and (min-width:2560px) {
+@media screen and (min-width:2060px) {
     .historia {
         padding: 0 35rem;
+        height: 100vh;
+        
     }
 }
 

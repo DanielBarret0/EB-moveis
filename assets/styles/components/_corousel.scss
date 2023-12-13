@@ -1,11 +1,59 @@
 @import '../abstract/variaveis';
 
 .carousel {
-    height: 100%;
+    .carousel-inner {
+        position: relative;
+    }
+
+    .carousel-item {
+        position: relative;
+        width: 100%;
+    }
+
+    .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        transform: translate(-25%, -50%);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        font-family: $fonte-principal;
+
+        padding: 0.5rem; //espaçamento interno
+        width: 65%; //tamanho do quadrado em volta
+
+        h3 {
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-align: left;
+            width: 100%;
+            text-transform: uppercase;
+            color: rgb(252, 155, 0);
+        }
+
+        p {
+            text-align: left;
+            width: 100%;
+        }
+    }
+
     .carousel-item {
         .carousel-item {
             text-align: center;
         }
+
+        .img {
+            height: 400px;
+            width: fit-content;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .carousel-item {
         .img {
             height: 400px;
             width: 100%;
@@ -16,25 +64,52 @@
 @media screen and (min-width:1024px) {
     .carousel {
         height: 100%;
+
         .carousel-item {
             .carousel-item {
                 text-align: center;
             }
+
+            .carousel-caption {
+
+                h3 {
+                    font-size: 2rem;
+                }
+        
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+
             .img {
                 height: 500px;
                 width: 100%;
             }
         }
+        
     }
 }
 
 @media screen and (min-width:1440px) {
     .carousel {
         height: 100%;
+
         .carousel-item {
             .carousel-item {
                 text-align: center;
             }
+
+            .carousel-caption {
+
+                h3 {
+                    font-size: 3rem;
+                }
+        
+                p {
+                    font-size: 2rem;
+                }
+            }
+
             .img {
                 height: 600px;
                 width: 100%;
@@ -43,13 +118,21 @@
     }
 }
 
-@media screen and (min-width:2560px) {
+@media screen and (min-width:2060px) {
     .carousel {
         height: 100%;
+
         .carousel-item {
             .carousel-item {
                 text-align: center;
             }
+
+            .carousel-caption {
+                top: 55%;
+                left: 48%;
+                transform: translate(-25%, -50%);
+            }
+
             .img {
                 height: 700px;
                 width: 100%;
@@ -57,4 +140,3 @@
         }
     }
 }
-

@@ -7,19 +7,42 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
+    height: 100vh;
+
+    .video {
+        display: block;
+        width: 100%;
+        /* Ocupa 100% da largura da tela */
+        height: 100vh;
+        /* Ocupa 100% da altura da tela */
+        object-fit: cover;
+        /* Mantém a proporção do vídeo e cobre a tela */
+        position: absolute;
+        /* Fixa o vídeo na tela, evitando rolagem */
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
 
     .textos {
         border-left: 4px solid $vermelho;
         padding-left: 8px;
+        padding: 2rem;
         margin: 1rem;
-        width: 50%;
+        z-index: 1;
+
+        /* From https://css.glass */
+        background: rgba(236, 236, 236, 0);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(11.3px);
+        -webkit-backdrop-filter: blur(11.3px);
 
         h1 {
             text-align: left;
             font-size: 2rem;
             font-weight: 700;
-            color: $madeira;
+            color: whitesmoke;
             margin-bottom: 1.5rem;
         }
 
@@ -28,10 +51,45 @@
             font-weight: 500;
             font-size: 1.2rem;
             word-spacing: 8%;
-            color: $fonte;
+            color: white;
             font-family: $fonte-secundaria;
+
+            .highlight {
+                position: relative;
+                display: inline-block;
+                font-weight: 500;
+                font-size: 1.2rem;
+                font-family: $fonte-secundaria;
+            }
+
+            .highlight::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                /* Inicialmente sem largura */
+                height: 100%;
+                background-color: $vermelho;
+                /* Cor de fundo da marcação */
+                mix-blend-mode: multiply;
+                /* Define o modo de mistura para que a cor de fundo não cubra o texto */
+                z-index: -1;
+                /* Coloca o pseudo-elemento abaixo do texto */
+                transition: width 2s ease-out;
+                /* Adiciona uma transição para suavizar a animação */
+                border-radius: 5px;
+            }
+
+            .highlight.active::before {
+                width: 100%;
+
+                /* Largura total quando a classe "active" é aplicada */
+            }
         }
     }
+
+
 
     .sobre-nos__img {
         width: 50%;
@@ -39,10 +97,11 @@
 }
 
 @media screen and (min-width:768px) {
-    
+
     .sobre-nos {
         flex-direction: row;
         padding: 0 2rem;
+
         .textos {
             padding-left: 15px;
         }
@@ -53,16 +112,17 @@
 @media screen and (min-width:1440px) {
     .sobre-nos {
         padding: 0 15rem;
+
     }
 }
 
-@media screen and (min-width:2560px) {
+@media screen and (min-width:2060px) {
     .sobre-nos {
         padding: 0 35rem;
+        height: 100vh;
     }
 
     .sobre-nos__img {
         width: 500px;
     }
 }
-
