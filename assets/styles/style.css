@@ -46,10 +46,11 @@ body {
   align-items: center;
   justify-content: space-between;
   /* From https://css.glass */
-  background: rgba(59, 59, 59, 0.5);
+  background: rgba(255, 255, 255, 0.483);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #000000;
   height: 50px;
@@ -62,7 +63,7 @@ body {
   text-align: center;
   gap: 0.5rem;
   text-decoration: none;
-  color: #EEE2DE;
+  color: #2B2A4C;
 }
 .top-nav .container__logo img {
   width: 40px;
@@ -190,7 +191,7 @@ body {
   .menu > li a {
     text-decoration: none;
     font-weight: 600;
-    color: #EEE2DE;
+    color: #2B2A4C;
     transition: 200ms all;
   }
   .menu .texto-hover {
@@ -822,7 +823,7 @@ body {
   }
   .rodape .logo .logo-desktop {
     display: block;
-    width: 350px;
+    width: 100%;
   }
   .rodape .logo .redes {
     display: flex;
