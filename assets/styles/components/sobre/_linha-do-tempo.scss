@@ -84,7 +84,7 @@
     ul.timeline-list li .timeline_content {
         width: 45%;
         color: #333;
-        padding: 30px;
+        padding: 10px;
         float: left;
         text-align: right;
     }
@@ -119,6 +119,41 @@
         color: $vermelho;
         font-family: $fonte-principal;
     }
+}
+
+/* Highlight 2 */
+
+.highlight-2 {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: $fonte-secundaria;
+}
+
+.highlight-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Inicialmente sem largura */
+    height: 100%;
+    background-color: $vermelho;
+    /* Cor de fundo da marcação */
+    mix-blend-mode: multiply;
+    /* Define o modo de mistura para que a cor de fundo não cubra o texto */
+    z-index: -1;
+    /* Coloca o pseudo-elemento abaixo do texto */
+    transition: width 2s ease-out;
+    /* Adiciona uma transição para suavizar a animação */
+    border-radius: 5px;
+}
+
+.highlight-2.active::before {
+    width: 100%;
+
+    /* Largura total quando a classe "active" é aplicada */
 }
 
 @media screen and (min-width:1440px) {
