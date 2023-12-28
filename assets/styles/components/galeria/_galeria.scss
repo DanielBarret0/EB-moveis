@@ -1,7 +1,41 @@
 @import '../../abstract/variaveis';
 
+.navegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    label {
+        font-size: 2rem;
+        color: $azul;
+        font-weight: 600;
+        padding-top: 2rem;
+    }
+
+    .dropdown {
+        padding: 1rem;
+
+        select {
+            padding: 1rem;
+            border: 2px solid $vermelho;
+            border-radius: 20px;
+            color: $azul;
+            font-size: 1.2rem;
+            font-weight: 500;
+
+            option {
+                color: $azul;
+                font-weight: 500;
+            }
+        }
+    }
+
+}
+
 .galeria {
-padding-bottom: 2rem;
+    padding-bottom: 2rem;
+
     .titulo {
         h2 {
             font-size: 2rem;
@@ -20,13 +54,24 @@ padding-bottom: 2rem;
         gap: 1rem;
         width: 100%;
 
+        .imagens-item {
+            transition: 500ms;
+            border: 2px solid $vermelho;
+            border-radius: 10px;
+            box-shadow: -1px 15px 15px -9px rgba(125, 125, 125, 0.46);
+            -webkit-box-shadow: -1px 15px 15px -9px rgba(125, 125, 125, 0.46);
+            -moz-box-shadow: -1px 15px 15px -9px rgba(125, 125, 125, 0.46);
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
     }
 
 }
 
 .clientes {
     background-color: rgba(125, 124, 124, 0.097);
-    border-radius: 50% 50% 50% 50% / 10px;
     padding: 1rem 0;
     margin: 2rem 0;
 
@@ -44,13 +89,19 @@ padding-bottom: 2rem;
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
         gap: 1rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 2rem;
+        
 
         .logos {
             width: 100px;
             border-radius: 50px;
+            transition: 300ms;
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
 }
@@ -84,7 +135,7 @@ padding-bottom: 2rem;
 .gallery img {
     cursor: pointer;
     margin: 5px;
-    max-width: 390px;
+    max-width: 300px;
     max-height: 300px;
 }
 
@@ -110,7 +161,42 @@ padding-bottom: 2rem;
     }
 }
 
+@media screen and (min-width:1024px) {
+    .clientes {
+        .clientes-logos {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem;
+            overflow-x: auto;
+            white-space: nowrap;
+
+            .logos {
+                width: 100px;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
 @media screen and (min-width:1440px) {
+
+    .clientes {
+        .clientes-logos {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+
+            .logos {
+                width: 110px;
+                border-radius: 50px;
+            }
+        }
+    }
 
     /* Estilo para cada imagem na galeria */
     .gallery img {

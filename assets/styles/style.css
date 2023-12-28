@@ -221,7 +221,6 @@ body {
     padding: 0 35rem;
   }
 }
-/* @import '../styles/components/corousel'; */
 .entrada {
   display: flex;
   flex-direction: column;
@@ -1220,6 +1219,34 @@ body {
     padding: 0 35rem;
   }
 }
+.navegacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navegacao label {
+  font-size: 2rem;
+  color: #2B2A4C;
+  font-weight: 600;
+  padding-top: 2rem;
+}
+.navegacao .dropdown {
+  padding: 1rem;
+}
+.navegacao .dropdown select {
+  padding: 1rem;
+  border: 2px solid #B31312;
+  border-radius: 20px;
+  color: #2B2A4C;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.navegacao .dropdown select option {
+  color: #2B2A4C;
+  font-weight: 500;
+}
+
 .galeria {
   padding-bottom: 2rem;
 }
@@ -1238,10 +1265,20 @@ body {
   gap: 1rem;
   width: 100%;
 }
+.galeria .imagens .imagens-item {
+  transition: 500ms;
+  border: 2px solid #B31312;
+  border-radius: 10px;
+  box-shadow: -1px 15px 15px -9px rgba(125, 125, 125, 0.46);
+  -webkit-box-shadow: -1px 15px 15px -9px rgba(125, 125, 125, 0.46);
+  -moz-box-shadow: -1px 15px 15px -9px rgba(125, 125, 125, 0.46);
+}
+.galeria .imagens .imagens-item:hover {
+  transform: scale(1.05);
+}
 
 .clientes {
   background-color: rgba(125, 124, 124, 0.097);
-  border-radius: 50% 50% 50% 50%/10px;
   padding: 1rem 0;
   margin: 2rem 0;
 }
@@ -1256,13 +1293,18 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 2rem;
 }
 .clientes .clientes-logos .logos {
   width: 100px;
   border-radius: 50px;
+  transition: 300ms;
+}
+.clientes .clientes-logos .logos:hover {
+  transform: scale(1.05);
 }
 
 /* Estilo para o modal */
@@ -1294,7 +1336,7 @@ body {
 .gallery img {
   cursor: pointer;
   margin: 5px;
-  max-width: 390px;
+  max-width: 300px;
   max-height: 300px;
 }
 
@@ -1316,7 +1358,34 @@ body {
     max-height: 300px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .clientes .clientes-logos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .clientes .clientes-logos .logos {
+    width: 100px;
+    border-radius: 50px;
+  }
+}
 @media screen and (min-width: 1440px) {
+  .clientes .clientes-logos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .clientes .clientes-logos .logos {
+    width: 110px;
+    border-radius: 50px;
+  }
   /* Estilo para cada imagem na galeria */
   .gallery img {
     cursor: pointer;
