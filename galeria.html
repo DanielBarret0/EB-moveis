@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EB Moveis Planejados</title>
+    <title>Galeria | EB Moveis Planejados</title>
     <meta name="description" content="EB Moveis Planejados qualidade e atendimento personalizado.">
     <meta name="keywords"
         content="Móveis, Planejados, EB Moveis, Aracaju, projetos, orçamento, MDF, projeto 3D, Design, interiores, profissional, marceneiro">
@@ -60,16 +60,24 @@
 
     <main>
         <div class="navegacao">
+            <video class="video" autoplay muted loop preload="auto" poster="assets/img/video/preload-1.png">
+                <source src="assets/img/video/video-fundo.webm" type="video/mp4">
+                <!-- creditos do video: https://www.youtube.com/watch?v=oT6f3H5H3ZQ -->
+                Desculpe, seu navegador não suporta o elemento de vídeo.
+            </video>
+
             <label for="secao">Selecione o ambiente</label>
             <div class="dropdown">
                 <select id="secao" name="secao" onchange="toggleSection(this.value)">
-                    <option value="todas">Todas as Seções</option>
+                    <option value="todas">Todos os projetos</option>
                     <option value="cozinhas">Cozinhas</option>
                     <option value="banheiros">Banheiros</option>
+                    <option value="escritorios">Escritorios</option>
                     <option value="salas">Salas</option>
                     <option value="dormitorios">Dormitórios</option>
                     <option value="restaurantes">Lojas</option>
                     <option value="lojas">Restaurantes</option>
+                    <option value="clinicas">Clinicas</option>
                 </select>
             </div>
         </div>
@@ -123,7 +131,33 @@
                         onclick="openImageModal(this)">
                     <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (32).jpg" alt="Imagem 4"" alt="Imagem 4"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (33).jpg" alt="Imagem 4"" alt="Imagem 4"
+                </div>
+
+                <!-- O modal -->
+                <div id="myModal" class="modal" onclick="closeImageModal()">
+                    <img src="" alt="Imagem" class="modal-content" onclick="stopPropagation(event)">
+                </div>
+            </div>
+        </section>
+
+        <section class="escritorios galeria" id="escritorios">
+            <div class="titulo">
+                <h2>Escritorios</h2>
+            </div>
+            <div class="imagens">
+                <!-- Galeria de imagens -->
+                <div class="gallery imagens">
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Escritorios/foto (1).jpg" alt="Imagem 1"
+                        onclick="openImageModal(this)">
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Escritorios/foto (2).jpg" alt="Imagem 2"
+                        onclick="openImageModal(this)">
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Escritorios/foto (3).jpg" alt="Imagem 3"
+                        onclick="openImageModal(this)">
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Escritorios/foto (4).jpg" alt="Imagem 4"
+                        onclick="openImageModal(this)">
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Escritorios/foto (5).jpg" alt="Imagem 5"
+                        onclick="openImageModal(this)">
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Escritorios/foto (6).jpg" alt="Imagem 6"
                         onclick="openImageModal(this)">
                 </div>
 
@@ -172,8 +206,6 @@
                     <img class="imagens-item" src="assets/img/Fotos-Projetos/Quartos/foto (2).jpg" alt="Imagem 2"
                         onclick="openImageModal(this)">
                     <img class="imagens-item" src="assets/img/Fotos-Projetos/Quartos/foto (3).jpg" alt="Imagem 3"
-                        onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Quartos/foto (4).jpg" alt="Imagem 4"
                         onclick="openImageModal(this)">
                     <img class="imagens-item" src="assets/img/Fotos-Projetos/Quartos/foto (5).jpg" alt="Imagem 5"
                         onclick="openImageModal(this)">
@@ -226,8 +258,6 @@
                         onclick="openImageModal(this)">
                     <img class="imagens-item" src="assets/img/Fotos-Projetos/lojas/foto (6).jpg" alt="Imagem 6"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/lojas/foto (7).jpg" alt="Imagem 7"
-                        onclick="openImageModal(this)">
                     <img class="imagens-item" src="assets/img/Fotos-Projetos/lojas/foto (10).jpg" alt="Imagem 8"
                         onclick="openImageModal(this)">
                     <img class="imagens-item" src="assets/img/Fotos-Projetos/lojas/foto (11).jpg" alt="Imagem 9"
@@ -258,8 +288,6 @@
                         onclick="openImageModal(this)">
                     <img class="imagens-item" src="assets/img/Fotos-Projetos/lojas/foto (39).jpg" alt="Imagem 22"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/lojas/foto (40).jpg" alt="Imagem 23"
-                        onclick="openImageModal(this)">
 
                 </div>
 
@@ -272,38 +300,56 @@
 
         <section class="restaurantes galeria" id="lojas">
             <div class="titulo">
-                <h2>Restaurantes e escritorios</h2>
+                <h2>Restaurantes</h2>
             </div>
             <div class="imagens">
                 <!-- Galeria de imagens -->
                 <div class="gallery imagens">
                     <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (25).jpg" alt="Imagem 1"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (26).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (26).jpg" alt="Imagem 2"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (27).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (27).jpg" alt="Imagem 3"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (28).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (28).jpg" alt="Imagem 4"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (29).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (29).jpg" alt="Imagem 5"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (30).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (30).jpg" alt="Imagem 6"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (31).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (31).jpg" alt="Imagem 7"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (32).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (32).jpg" alt="Imagem 8"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (33).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (34).jpg" alt="Imagem 9"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (34).jpg" alt="Imagem 1"
+                </div>
+
+                <!-- O modal -->
+                <div id="myModal" class="modal" onclick="closeImageModal()">
+                    <img src="" alt="Imagem" class="modal-content" onclick="stopPropagation(event)">
+                </div>
+            </div>
+        </section>
+
+        <section class="clinicas galeria" id="clinicas">
+            <div class="titulo">
+                <h2>Clinicas</h2>
+            </div>
+            <div class="imagens">
+                <!-- Galeria de imagens -->
+                <div class="gallery imagens">
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Clinicas/foto (1).jpg" alt="Imagem 1"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (35).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Clinicas/foto (2).jpg" alt="Imagem 2"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (36).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Clinicas/foto (3).jpg" alt="Imagem 3"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (37).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Clinicas/foto (4).jpg" alt="Imagem 4"
                         onclick="openImageModal(this)">
-                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Restaurantes/foto (38).jpg" alt="Imagem 1"
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Clinicas/foto (5).jpg" alt="Imagem 5"
+                        onclick="openImageModal(this)">
+                    <img class="imagens-item" src="assets/img/Fotos-Projetos/Clinicas/foto (6).jpg" alt="Imagem 6"
                         onclick="openImageModal(this)">
                 </div>
 
@@ -317,9 +363,9 @@
 
     <footer class="rodape">
         <div class="conteudo">
-            <a href="#sobre">Sobre nós</a>
-            <a href="#projeto">Projetos</a>
-            <a href="#orcamento">Orçamento</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="galeria.html">Projetos</a>
+            <a href="https://wa.me/55079999818603/?text=Ol%C3%A1!%20Estou%20interessado%20em%20obter%20um%20or%C3%A7amento">Orçamento</a>
         </div>
         <div class="logo">
             <img class="logo-mobile" src="assets/img/logo-sem-fundo/logo-e-nome.png" alt="logo">
@@ -338,8 +384,14 @@
         <p>© Copyright - Todos os direitos reservados - EB Moveis 2023 • Política de Privacidade • Desenvolvido por
             Daniel Barreto</p>
     </div>
+
+    <button id="btnScrollToTop">
+        <p>Voltar ao topo</p>
+    </button>
+
     <script src="assets/js/galeria-dropdown.js"></script>
     <script src="assets/js/modal-galeria.js"></script>
+    <script src="assets/js/botao-topo.js"></script>
 </body>
 
 </html>
