@@ -5,24 +5,42 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+
+    .video {
+        display: block;
+        width: 100%;
+        /* Ocupa 100% da largura da tela */
+        height: 100vh;
+        /* Ocupa 100% da altura da tela */
+        object-fit: cover;
+        /* Mantém a proporção do vídeo e cobre a tela */
+        position: absolute;
+        /* Fixa o vídeo na tela, evitando rolagem */
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
 
     label {
         font-size: 2rem;
-        color: $azul;
+        color: white;
         font-weight: 600;
-        padding-top: 2rem;
     }
 
     .dropdown {
         padding: 1rem;
-
+        
         select {
             padding: 1rem;
             border: 2px solid $vermelho;
             border-radius: 20px;
-            color: $azul;
+            color: white;
             font-size: 1.2rem;
             font-weight: 500;
+            background: rgba(255, 255, 255, 0.483);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
             option {
                 color: $azul;
@@ -43,6 +61,7 @@
             color: $madeira;
             font-family: $fonte-principal;
             margin: 2rem;
+            text-align: center;
         }
     }
 

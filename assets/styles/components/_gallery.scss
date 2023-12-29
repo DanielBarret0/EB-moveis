@@ -107,11 +107,15 @@
                 display: inline-block;
                 text-decoration: none;
                 text-transform: uppercase;
-                font-weight: 600;
+                font-weight: 700;
                 font-size: 0.8rem;
-                border-bottom: 1px solid $madeira;
+                border-bottom: 2px solid $madeira;
                 color: $madeira;
                 font-size: 1.1rem;
+                &:hover {
+                    color: $vermelho;
+                    border-color: $vermelho;
+                }
             }
         }
 
@@ -154,6 +158,11 @@
                 border: 2px solid $madeira;
                 border-radius: 5px;
                 color: $madeira;
+
+                &:hover {
+                    color: $vermelho;
+                    border-color: $vermelho;
+                }
             }
         }
     }
