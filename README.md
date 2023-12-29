@@ -1,12 +1,12 @@
-# EB Móveis Planejados - Site Institucional
+# 🛋️ EB Móveis Planejados - Site Institucional
 
 Bem-vindo ao repositório do site institucional da EB Móveis Planejados. Este projeto foi desenvolvido como parte de um trabalho freelance e tem como principal objetivo compartilhar a história e os projetos da empresa.
 
-## Visão Geral
+## 🌐 Visão Geral
 
 O site foi criado utilizando HTML, SCSS (compilado para CSS) e JavaScript. Ele serve como uma vitrine online para a EB Móveis Planejados, proporcionando aos visitantes uma experiência envolvente ao explorar a história da empresa e seus projetos de móveis planejados.
 
-## Processo de Desenvolvimento
+## 🚀 Processo de Desenvolvimento
 
 Este projeto foi um dos meus primeiros trabalhos freelance e envolveu várias etapas, desde a concepção até a implementação. Algumas das principais fases incluíram:
 
@@ -29,7 +29,7 @@ Este projeto foi um dos meus primeiros trabalhos freelance e envolveu várias et
 5. **Entrega:**
    - Após a aprovação da EB Móveis Planejados, entreguei o projeto e auxiliei na implantação.
 
-## Screenshots
+## 📷 Screenshots
 
 ![Home Page](screenshots/home.png)
 *Descrição da imagem da captura de tela da página inicial.*
@@ -40,10 +40,10 @@ Este projeto foi um dos meus primeiros trabalhos freelance e envolveu várias et
 ![Projetos](screenshots/projetos.png)
 *Descrição da imagem da captura de tela da página de projetos.*
 
-## Como Contribuir
+## 🤝 Como Contribuir
 
 Se você deseja contribuir para melhorar este projeto, sinta-se à vontade para abrir issues ou enviar pull requests. Suas sugestões são sempre bem-vindas!
 
-## Licença
+## 📄 Licença
 
 Este projeto é licenciado sob a [Licença MIT](LICENSE).
