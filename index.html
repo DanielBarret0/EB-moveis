@@ -28,6 +28,8 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -68,9 +70,9 @@
             </video>
 
             <div class="textos">
-                <h1>EB Moveis Planjeados</h1>
+                <h1 data-aos="fade-up">EB Moveis Planjeados</h1>
 
-                <p>Voce encontra uma <span class="highlight">Qualidade Excepcional</span> e <span
+                <p data-aos="fade-up" data-aos-duration="500">Voce encontra uma <span class="highlight">Qualidade Excepcional</span> e <span
                         class="highlight-2">Atendimento Personalizado.</span></p>
 
             </div>
@@ -80,8 +82,8 @@
         <div class="espacamento-desktop">
             <section class="sobre" id="sobre">
 
-                <img class="sobre__imagem" src="assets/img/gif/about-us.gif" alt="imagem gif">
-                <div class="textos">
+                <img class="sobre__imagem" src="assets/img/gif/about-us.gif" alt="imagem gif" data-aos="fade-down">
+                <div class="textos" data-aos="fade-down" data-aos-duration="500">
                     <h1>Quem somos?</h1>
                     <p>A EB Móveis, desde sua fundação, tem marcado sua trajetória com um compromisso inabalável com a
                         pontualidade. Nossa jornada é guiada pelo desejo de entregar móveis planejados de alta
@@ -93,38 +95,38 @@
             </section>
 
             <section class="gallery-mobile" id="projeto">
-                <div class="textos">
+                <div class="textos" data-aos="flip-up">
                     <h2>Ambientes e móveis Planejados</h2>
                     <p>Conheça alguns dos projetos que destacam a diversidade e excelência da nossa empresa.</p>
                 </div>
 
                 <div class="container__grid">
-                    <a href="galeria.html" class="categoria">
+                    <a href="#" class="categoria" data-aos="flip-up">
                         <p>Cozinhas</p>
                         <img src="assets/img/banner dos cards/cozinhas.png" alt="Cozinhas">
                     </a>
-                    <a href="galeria.html" class="categoria">
+                    <a href="galeria.html" class="categoria" data-aos="flip-up">
                         <p>Cozinhas</p>
                         <img src="assets/img/banner dos cards/banheiros.png" alt="Banheiros">
                     </a>
-                    <a href="galeria.html" class="categoria">
+                    <a href="galeria.html" class="categoria" data-aos="flip-up">
                         <p>Cozinhas</p>
                         <img src="assets/img/banner dos cards/restaurantes.png" alt="Restaurantes">
                     </a>
-                    <a href="galeria.html" class="categoria">
+                    <a href="galeria.html" class="categoria" data-aos="flip-up">
                         <p>Cozinhas</p>
                         <img src="assets/img/banner dos cards/dormitorios.png" alt="Dormitórios">
                     </a>
-                    <a href="galeria.html" class="categoria">
+                    <a href="galeria.html" class="categoria" data-aos="flip-up">
                         <p>Cozinhas</p>
                         <img src="assets/img/banner dos cards/lojas.png" alt="Lojas">
                     </a>
-                    <a href="galeria.html" class="categoria">
+                    <a href="galeria.html" class="categoria" data-aos="flip-up">
                         <p>Cozinhas</p>
                         <img src="assets/img/banner dos cards/salas.png" alt="Salas">
                     </a>
 
-                    <div class="ver-mais">
+                    <div class="ver-mais" data-aos="fade-up">
                         <a href="galeria.html">Ver Todos</a>
                     </div>
                 </div>
@@ -132,34 +134,34 @@
 
             <section class="gallery-desktop" id="projeto">
 
-                <div class="textos">
+                <div class="textos" data-aos="fade-down">
                     <h2>Ambientes e móveis Planejados</h2>
                     <p>Conheça alguns dos projetos que destacam a diversidade e excelência da nossa empresa.</p>
                     <a class="ver-mais" href="galeria.html">Ver Todos</a>
                 </div>
 
                 <div class="container__flex">
-                    <a href="galeria.html" class="categoria">
+                    <a href="galeria.html" class="categoria" data-aos="flip-right">
                         <p>Cozinhas</p>
                         <img src="assets/img/banner dos cards/cozinhas.png" alt="Cozinhas">
                     </a>
-                    <a href="galeria.html" class="categoria">
+                    <a href="galeria.html" class="categoria" data-aos="flip-right">
                         <p>Banheiros</p>
                         <img src="assets/img/banner dos cards/banheiros.png" alt="Banheiros">
                     </a>
-                    <a href="galeria.html" class="categoria">
+                    <a href="galeria.html" class="categoria" data-aos="flip-right">
                         <p>Restaurantes</p>
                         <img src="assets/img/banner dos cards/restaurantes.png" alt="Restaurantes">
                     </a>
-                    <a href="galeria.html" class="categoria">
+                    <a href="galeria.html" class="categoria" data-aos="flip-right">
                         <p>Dormitórios</p>
                         <img src="assets/img/banner dos cards/dormitorios.png" alt="Dormitórios">
                     </a>
-                    <a href="galeria.html" class="categoria">
+                    <a href="galeria.html" class="categoria" data-aos="flip-right">
                         <p>Lojas</p>
                         <img src="assets/img/banner dos cards/lojas.png" alt="Lojas">
                     </a>
-                    <a href="galeria.html" class="categoria">
+                    <a href="galeria.html" class="categoria" data-aos="flip-right">
                         <p>Salas</p>
                         <img src="assets/img/banner dos cards/salas.png" alt="Salas">
                     </a>
@@ -169,15 +171,17 @@
             </section>
 
             <section class="orcamento" id="orcamentos">
-                <img class="orcamento-imagem" src="assets/img/orcamento.svg" alt="...">
-                <div class="textos">
+                <img class="orcamento-imagem" src="assets/img/orcamento.svg" alt="..." data-aos="fade-down">
+                <div class="textos" data-aos="fade-up">
                     <h2>Como fazer o orçamento</h2>
                     <p>Nosso comprometimento é fornecer orçamentos personalizados gratuitos, adaptados às suas
                         necessidades. Para garantir precisão, agende pelo WhatsApp o melhor horário para a tomada de
                         medidas. Estamos aqui para personalizar sua experiência desde o início.
                     </p>
 
-                    <a class="orcamento-link" href="https://wa.me/55079999818603/?text=Ol%C3%A1!%20Estou%20interessado%20em%20obter%20um%20or%C3%A7amento" target="_blank">Faça seu orçamento</a>
+                    <a class="orcamento-link"
+                        href="https://wa.me/55079999818603/?text=Ol%C3%A1!%20Estou%20interessado%20em%20obter%20um%20or%C3%A7amento"
+                        target="_blank">Faça seu orçamento</a>
                 </div>
 
             </section>
@@ -195,15 +199,19 @@
             <img class="logo-mobile" src="assets/img/logo-sem-fundo/logo-e-nome.png" alt="logo">
             <img class="logo-desktop" src="assets/img/logo-sem-fundo/logo.png" alt="logo da EB moveis">
             <div class="redes">
-                <a href="https://www.instagram.com/emersonebmoveis/?igshid=MTNiYzNiMzkwZA%3D%3D" target="_blank" aria-label="Icone do instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.facebook.com/Ebmoveisplanejados" target="_blank" aria-label="Icone do facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://wa.me/55079999818603/?text=Ol%C3%A1!%20Estou%20interessado%20em%20obter%20um%20or%C3%A7amento" target="_blank" aria-label="Icone do whats app"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/emersonebmoveis/?igshid=MTNiYzNiMzkwZA%3D%3D" target="_blank"
+                    aria-label="Icone do instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/Ebmoveisplanejados" target="_blank" aria-label="Icone do facebook"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://wa.me/55079999818603/?text=Ol%C3%A1!%20Estou%20interessado%20em%20obter%20um%20or%C3%A7amento"
+                    target="_blank" aria-label="Icone do whats app"><i class="bi bi-whatsapp"></i></a>
             </div>
         </div>
     </footer>
     <div class="dev">
         <p>© Copyright - Todos os direitos reservados - EB Moveis 2023 • Política de Privacidade • Desenvolvido por
-            <a href="https://social-links-v2.bohr.io/">Daniel Barreto</a></p>
+            <a href="https://social-links-v2.bohr.io/">Daniel Barreto</a>
+        </p>
     </div>
 
     <button id="btnScrollToTop">
@@ -212,6 +220,10 @@
 
     <script src="assets/js/botao-topo.js"></script>
     <script src="assets/js/efeito-texto.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
